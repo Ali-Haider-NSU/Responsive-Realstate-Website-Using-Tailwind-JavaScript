@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makaan</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-[90%] mx-auto py-5 bg-white ">
+            <div class="flex items-center gap-x-3 z-10">
+                <img class="border-2 border-dotted border-green rounded-full w-12 h-12 p-2" src="img/icon-deal.png" alt="">
+                <h1 class="text-3xl font-bold text-green">Makaan</h1>
+            </div>
+            <div class="nav-links lg:static lg:min-h-fit absolute min-h-[60vh] left-0 top-[-100%] w-full lg:w-auto flex items-center px-[7%] duration-1000">
+                <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-10 gap-8">
+                    <li>
+                        <a class="text-green" href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-green transition" href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-green transition" href="#">PROPERTY</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-green transition" href="#">PAGES</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-green transition" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class=" bg-green px-4 h-10 w-36 text-center rounded-full lg:rounded-md text-white font-bold">Add Property</button>
+                <ion-icon onclick="onToggleMenu(this)" class="text-4xl font-bold cursor-pointer lg:hidden" name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+</html>
