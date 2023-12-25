@@ -10,25 +10,46 @@
 
 <body>
     <header>
-        <nav class="flex justify-between items-center w-[90%] mx-auto py-5 bg-white ">
+        <nav class="flex justify-between items-center w-[90%] mx-auto py-5 ">
             <div class="flex items-center gap-x-3 z-10">
                 <img class="border-2 border-dotted border-green rounded-full w-12 h-12 p-2" src="img/icon-deal.png" alt="">
                 <h1 class="text-3xl font-bold text-green">Makaan</h1>
             </div>
-            <div class="nav-links lg:static lg:min-h-fit absolute min-h-[60vh] left-0 top-[-100%] w-full lg:w-auto flex items-center px-[7%] duration-1000">
-                <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-10 gap-8">
+            <div class="nav-links lg:static lg:min-h-fit absolute  left-0 top-24 w-full lg:w-auto flex items-center px-[7%] duration-1000 z-20">
+                <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-10 gap-5 text-blue lg:text-xl ">
                     <li>
                         <a class="text-green" href="#">HOME</a>
                     </li>
                     <li>
                         <a class="hover:text-green transition" href="#">ABOUT</a>
                     </li>
-                    <li>
-                        <a class="hover:text-green transition" href="#">PROPERTY</a>
+                    <li class="property">
+                        <a class="flex items-center gap-x-2 hover:text-green transition cursor-pointer" href="#">PROPERTY<ion-icon class="text-xl" name="chevron-down-outline"></ion-icon></a>
+                        <ul class="subproperty mt-3 lg:mt-0 border w-[85vw] lg:w-auto text-lg hidden">
+                            <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
+                                <a href="#">Property List</a>
+                            </li>
+                            <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
+                                <a href="#">Property Type</a>
+                            </li>
+                            <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
+                                <a href="#">Property Agent</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="hover:text-green transition" href="#">PAGES</a>
+                    <li class="pages">
+                        <a class="flex items-center gap-x-2 hover:text-green transition cursor-pointer" href="#">PAGES<ion-icon class="text-xl" name="chevron-down-outline"></ion-icon></a>
+                        <ul class="subpages mt-3 lg:mt-0 border w-[85vw] lg:w-auto text-lg hidden">
+                            <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
+                                <a href="#">Testimonial</a>
+                            </li>
+                            <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
+                                <a href="#">404 Error</a>
+                            </li>
+
+                        </ul>
                     </li>
+
                     <li>
                         <a class="hover:text-green transition" href="#">CONTACT</a>
                     </li>
@@ -36,11 +57,47 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <button class=" bg-green px-4 h-10 w-36 text-center rounded-full lg:rounded-md text-white font-bold">Add Property</button>
+                <button class=" bg-green px-4 h-10 w-36 text-center rounded-full lg:rounded-md text-white font-bold ">Add Property</button>
                 <ion-icon onclick="onToggleMenu(this)" class="text-4xl font-bold cursor-pointer lg:hidden" name="menu"></ion-icon>
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="bg-white z-50 absolute">
+            <div class=" mx-[7%] py-10">
+                <h1 class="text-4xl font-bold text-blue">Find A <span class="text-green">Perfect Home</span> To Live With Your Family</h1>
+                <p class="text-gray my-8">Vero elitr justo clita lorem. Ipsum dolor at sed stetsit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                <div>
+                    <button class="bg-green text-white text-xl text-center px-10 py-3 rounded-lg">Get Started</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex">
+                    <img src="img/carousel-1.jpg" alt="">
+                    <img src="img/carousel-2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="bg-green flex flex-col py-10 px-[10%] gap-y-3">
+                <input class="h-14 rounded-lg px-5 text-gray" type="text" value="Search Keyword">
+                <select class="h-14 rounded-lg text-gray bg-white  px-5" name="property" id="">
+                    <option value="">Property Type</option>
+                    <option value="">Property 1</option>
+                    <option value="">Property 2</option>
+                    <option value="">Property 3</option>
+                </select>
+                <select class="h-14 rounded-lg text-gray bg-white px-5" name="property" id="">
+                    <option value="">Location</option>
+                    <option value="">Location 1</option>
+                    <option value="">Location 2</option>
+                    <option value="">Location 3</option>
+                </select>
+                <input class="h-14 rounded-lg px-5 bg-blue text-center text-white" type="text" value="Search">
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
