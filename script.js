@@ -1,8 +1,14 @@
 const navlinks = document.querySelector('.nav-links');
+const mainarea = document.querySelector('.main-area');
 
 function onToggleMenu(e) {
     e.name = e.name === 'menu' ? 'close' : 'menu'
-    navlinks.classList.toggle('top-20');
+    if (e.name === 'close') {
+        mainarea.style.marginTop = '244px'
+    } else {
+        mainarea.style.marginTop = '0'
+    }
+
 }
 
 const property = document.querySelector('.property');
@@ -66,3 +72,35 @@ function resizedWindow() {
 }
 
 window.addEventListener('resize', resizedWindow)
+
+
+// Changing Slide Carousel
+
+const rightbtn = document.querySelector('.right-btn');
+const leftbtn = document.querySelector('.left-btn');
+const singlediv = document.querySelectorAll('.single-img');
+const slidecontainer = document.querySelector('.slide-container');
+
+let index = 0;
+
+
+function changeSlide() {
+    if (index > singlediv.length - 1) {
+        index = 0;
+    } else if (index < 0) {
+        index = singlediv.length - 1;
+    }
+    let value = -(index * 100);
+    slidecontainer.style.transform = `translateX(${value}%)`;
+}
+
+
+rightbtn.addEventListener('click', () => {
+    index++;
+    changeSlide()
+})
+
+leftbtn.addEventListener('click', () => {
+    index--;
+    changeSlide()
+})

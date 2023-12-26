@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-container{
+    transform: translateX(0%);
+    transition: transform 1.5s ease-in-out;
+}
