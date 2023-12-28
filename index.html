@@ -24,9 +24,9 @@
                     <li>
                         <a class="hover:text-green transition" href="#">ABOUT</a>
                     </li>
-                    <li class="property">
+                    <li class="property group">
                         <a class="flex items-center gap-x-2 hover:text-green transition cursor-pointer" href="#">PROPERTY<ion-icon class="text-xl" name="chevron-down-outline"></ion-icon></a>
-                        <ul class="subproperty mt-3 lg:mt-0 border lg:border-gray w-[85vw] lg:w-auto text-lg hidden bg-white pr-5">
+                        <ul class="subproperty mt-3 lg:mt-0 border lg:border-gray w-[85vw] lg:w-auto text-lg hidden bg-white pr-5 lg:group-hover:block lg:group-hover:absolute">
                             <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
                                 <a href="#">Property List</a>
                             </li>
@@ -38,9 +38,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="pages">
+                    <li class="pages group">
                         <a class="flex items-center gap-x-2 hover:text-green transition cursor-pointer" href="#">PAGES<ion-icon class="text-xl" name="chevron-down-outline"></ion-icon></a>
-                        <ul class="subpages mt-3 lg:mt-0 border w-[85vw] lg:w-auto text-lg hidden bg-white pr-5">
+                        <ul class="subpages mt-3 lg:mt-0 border w-[85vw] lg:w-auto text-lg hidden bg-white pr-5 lg:group-hover:block lg:group-hover:absolute">
                             <li class="hover:bg-gray-200 h-10 flex items-center pl-3 cursor-pointer">
                                 <a href="#">Testimonial</a>
                             </li>
@@ -65,7 +65,8 @@
     </header>
 
     <main class="main-area mt-0 duration-1000 ">
-        <div class="bg-[#FEFEFE] absolute md:grid grid-cols-2 z-50 lg:z-0">
+        <!-- Heroarea Section -->
+        <div class="bg-[#FEFEFE]  md:grid grid-cols-2 z-50 lg:z-0">
             <div class="w-full overflow-hidden relative md:order-2">
                 <div class="flex slide-container image-container md:my-10 md:max-h-[450px] lg:max-h-[500px]">
                     <img class="single-img" src="img/carousel-1.jpg" alt="">
@@ -111,6 +112,81 @@
                 <input class="h-14 rounded-lg px-5 md:w-28 bg-blue text-center text-white" type="text" value="Search">
             </div>
         </div>
+
+        <!-- Property Type Section -->
+        <section>
+            <div class="my-16">
+                <h1 class="text-blue text-3xl md:text-4xl xl:text-5xl font-bold text-center">Property Types</h1>
+                <p class="text-gray mt-5 text-center w-[400px] md:w-[500px] xl:w-[600px] mx-auto">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-14 md:gap-20 xl:gap-16 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-16 mt-16">
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-apartment.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Apartment</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-villa.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Villa</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-house.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Home</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-housing.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Office</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-building.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Building</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-luxury.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Townhouse</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-condominium.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Shop</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                    <div class="property-card group">
+                        <div class="property-img-div">
+                            <img class="property-img " src="img/icon-house.png" alt="">
+                        </div>
+                        <h1 class="property-h1">Garage</h1>
+                        <p class="property-p">123 Properties</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <script src="script.js"></script>
