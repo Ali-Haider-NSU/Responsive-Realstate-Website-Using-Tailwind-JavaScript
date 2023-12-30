@@ -31,4 +31,6 @@
     .property-p{
         @apply text-green text-lg text-center group-hover:text-white
     }
+
+
 }
